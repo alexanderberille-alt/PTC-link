@@ -4,11 +4,13 @@ Projet d’application iPhone pour jouer à distance, en 5G, aux jeux d’un PC 
 
 Le jeu tourne sur le PC. L’iPhone reçoit l’image et le son par Internet et renvoie les commandes du joueur. Ce parcours est prévu pour jouer hors de chez soi, depuis le réseau mobile.
 
-## Expérience prévue
+## Interface prévue
 
-- Retrouver les jeux lancés récemment depuis l’accueil.
-- Parcourir la bibliothèque des jeux installés sur le PC.
-- Choisir un jeu depuis sa fiche et lancer une session de jeu à distance.
+L’interface reprendra le thème sombre, la navigation par onglets et les cartes de Greenlight, avec une disposition adaptée à l’iPhone et l’identité visuelle de PTC-link. [Projet Greenlight](https://github.com/unknownskl/greenlight)
+
+- **Mon PC** affiche l’état de connexion du PC Windows 11.
+- **Bibliothèque** présente les jeux installés sur le PC et les jeux récemment lancés.
+- Le bouton **Jouer** sur la fiche d’un jeu lance une session à distance.
 
 Les jeux de la série **Persona** font partie des exemples envisagés pour essayer ce parcours.
 
