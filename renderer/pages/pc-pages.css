@@ -1,0 +1,36 @@
+/* Keep Greenlight's two tile actions available without the original poster artwork. */
+div.component_gametitle { height: 140px; }
+div.component_gametitle > a { display: block; width: 100%; height: 100%; color: #fff; }
+div.component_gametitle div.component_gametitle_title {
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    background: rgba(0, 0, 0, .3);
+}
+div.component_gametitle:hover div.component_gametitle_title { background: rgba(0, 135, 70, .35); }
+div.component_gametitle div.component_gametitle_infopage { opacity: 1; }
+div.component_gametitle div.component_gametitle_infopage a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+div#page_info_titleid { box-sizing: border-box; }
+.pc-library-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+
+@media (max-width: 780px) {
+    div#component_settings_sidebar, div#component_settings_sidebar_menu, div#component_settings_sidebar_content {
+        position: static;
+        width: auto;
+    }
+    div#component_settings_sidebar_menu ul { display: flex; }
+    div#component_settings_sidebar_content label { min-width: 0; display: block; margin-bottom: 10px; }
+    div#component_settings_sidebar_content input[type="range"] { min-width: 0; max-width: 100%; }
+    div#page_info_titleid_sidebar, div#page_info_titleid_content { float: none; width: auto; margin-right: 0; }
+    div#page_info_titleid_content { margin-top: 20px; }
+}
+
+@media (max-height: 500px) {
+    div[id^="component_viewportgrid_"]:not(#component_viewportgrid_pagination) {
+        height: auto !important;
+    }
+}
